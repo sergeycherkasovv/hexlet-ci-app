@@ -9,3 +9,9 @@ jobs:
       - run: make setup
       - run: make test
       - run: make lint
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+
+      - name: Print Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
